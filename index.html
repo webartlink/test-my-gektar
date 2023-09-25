@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="node_modules/uikit/dist/css/uikit.min.css"/>
+	<link rel="stylesheet" href="main.css">
+	
+	<title>Локации</title>
+</head>
+<body>
+
+<div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin card" uk-grid>
+	<div class="uk-width-1-3@s ">
+		 <div class="uk-card-left-side uk-height-match">
+			  <div class="uk-card-body">
+					<h3 class="title">Выбери участок в лучшей локации</h3>
+					<div class="filter" uk-filter="target: .js-filter">
+						 <div class="uk-subnav uk-subnav-pill nav-link">
+							  <div class="uk-active" uk-filter-control="[data-place='volga']"><a href="#">На Волге</a></div>
+							  <div uk-filter-control="[data-place='valday']"><a href="#">На Валдае</a></div>
+							  <div uk-filter-control="[data-place='vazul']"><a href="#">На Вазуле</a></div>
+							  <div uk-filter-control="[data-place='seliger']"><a href="#">На Селигере</a></div>
+						 </div>
+						 <ul class="js-filter" uk-grid>
+							  <li data-place='volga' class="">
+									<p class="text">
+										 Волга — одна из самых величественных и красивых рек в России, 
+										 а также самая многоводная в Европе. Ее путь простирается через 
+										 обширные леса, горы и холмы. Растительный и животный мир реки впечатляет 
+										 своим многообразием. Это место силы с богатой историей и уникальной природой, 
+										 идеальное для жизни, отдыха и ведения бизнеса.
+									</p>
+									<div class="link-button">
+										 <a class="uk-link-text" href="https://vt.bigland.ru/vt/eac40732-a3bc-4b16-b4a5-64381e88f54a/index.html" target="_blank" style="text-align: center;">Смотреть участки</a>
+									</div>
+							  </li>
+							  <li data-place='valday' class="">
+								<p class="text">
+									Валдай по праву называется озерным краем, 
+									здесь расположено несколько десятков озер. Самые крупные из них — Велье, 
+									Селигер, Ужин, Ильмень, Боровно. Район отличается кристально чистым воздухом,
+									а незабываемые виды на чистые и глубокие лесные озера Валдая делают это место 
+									особенным.
+								</p>
+								
+								<div class="link-button">
+									<a class="uk-link-text" href="https://vt.bigland.ru/vt/eac40732-a3bc-4b16-b4a5-64381e88f54a/index.html" target="_blank" style="text-align: center;">Смотреть участки</a>
+								</div>
+							</li>
+							<li data-place='vazul' class="">
+								<p class="text">
+									Территория подойдет тем, кто высоко ценит индивидуальность, 
+									высококлассную инфраструктуру. Здесь есть все, что необходимо 
+									для жизни и отдыха в гармонии: прекрасная экология, ощущение свободы 
+									и городской уровень комфорта. Открывается много возможностей для отдыха: 
+									прогулки на лодках и яхтах, дайвинг, катание на гидроциклах, пейнтбол, 
+									купание, рыбалка, охота, зимние виды спорта, зимняя рыбалка
+								</p>
+								<div class="link-button">
+									<a class="uk-link-text" href="https://vt.bigland.ru/vt/eac40732-a3bc-4b16-b4a5-64381e88f54a/index.html" target="_blank" style="text-align: center;">Смотреть участки</a>
+								</div>
+							</li>
+							<li data-place='seliger' class="">
+								<p class="text">
+									Селигер — одно из красивейших озер европейской части России. 
+								Это не просто озеро, а система озер, соединенных между собой короткими 
+								проливами, образуя настоящий водный лабиринт. Здесь можно насладиться 
+								отличной рыбалкой, собирать грибы и ягоды, а также отправиться в 
+								увлекательное путешествие по озеру на лодке, чтобы посетить 
+								Нилову пустынь — овеянный легендами действующий монастырь
+								</p>
+								<div class="link-button">
+									<a class="uk-link-text" href="https://vt.bigland.ru/vt/eac40732-a3bc-4b16-b4a5-64381e88f54a/index.html" target="_blank" style="text-align: center;">Смотреть участки</a>
+								</div>
+							</li>
+						 </ul>
+					</div>
+			  </div>
+		 </div>
+	</div>
+	<div class="uk-width-2-3@s">
+		 <div class="uk-flex-last@s uk-card-media-right uk-cover-container uk-height-match">
+			  <div class="uk-position-relative uk-light" uk-slideshow>
+					<ul class="uk-slideshow-items">
+						 <li>
+							  <img src="images/volga.jpg" alt="" uk-cover>
+						 </li>
+						 <li data-place="valday">
+							  <img src="images/valday.png" alt="" uk-cover>
+						 </li>
+						 <li>
+							  <img src="images/vazul.png" alt="" uk-cover>
+						 </li>
+						 <li>
+							  <img src="images/seliger.png" alt="" uk-cover>
+						 </li>
+					</ul>
+					<div class="uk-position-bottom-center uk-position-small">
+						 <ul class="uk-dotnav">
+							  <li uk-slideshow-item="0"><a href="#">Item 1</a></li>
+							  <li uk-slideshow-item="1"><a href="#">Item 2</a></li>
+							  <li uk-slideshow-item="2"><a href="#">Item 3</a></li>
+							  <li uk-slideshow-item="3"><a href="#">Item 4</a></li>
+						 </ul>
+					</div>
+			  </div>
+			  <!-- <canvas width="600" height="600"></canvas> -->
+		 </div>
+	</div>
+</div>
+
+	<script src="node_modules/uikit/dist/js/uikit.min.js"></script>
+	<script src="node_modules/uikit/dist/js/uikit-icons.min.js"></script>
+	
+		
+</body>
+</html>
