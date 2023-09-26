@@ -8,7 +8,6 @@
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="node_modules/uikit/dist/css/uikit.min.css"/>
 	<link rel="stylesheet" href="main.css">
-	
 	<title>Локации</title>
 </head>
 <body>
@@ -18,14 +17,14 @@
 		 <div class="uk-card-left-side uk-height-match">
 			  <div class="uk-card-body">
 					<h3 class="title">Выбери участок в лучшей локации</h3>
-					<div class="filter" uk-filter="target: .js-filter">
-						 <div class="uk-subnav uk-subnav-pill nav-link">
+					<div class="filter" >
+						 <div class="uk-subnav uk-subnav-pill nav-link" uk-switcher="connect: .switcher-container">
 							  <div class="uk-active" uk-filter-control="[data-place='volga']"><a href="#">На Волге</a></div>
 							  <div uk-filter-control="[data-place='valday']"><a href="#">На Валдае</a></div>
-							  <div uk-filter-control="[data-place='vazul']"><a href="#">На Вазуле</a></div>
+							  <div uk-filter-control="[data-place='vazul']"><a href="#">На Вазузе</a></div>
 							  <div uk-filter-control="[data-place='seliger']"><a href="#">На Селигере</a></div>
 						 </div>
-						 <ul class="js-filter" uk-grid>
+						 <ul class="uk-switcher switcher-container" uk-grid>
 							  <li data-place='volga' class="">
 									<p class="text">
 										 Волга — одна из самых величественных и красивых рек в России, 
@@ -85,7 +84,7 @@
 	<div class="uk-width-2-3@s">
 		 <div class="uk-flex-last@s uk-card-media-right uk-cover-container uk-height-match">
 			  <div class="uk-position-relative uk-light" uk-slideshow>
-					<ul class="uk-slideshow-items">
+					<ul class="uk-slideshow-items uk-switcher switcher-container">
 						 <li>
 							  <img src="images/volga.jpg" alt="" uk-cover>
 						 </li>
@@ -112,6 +111,7 @@
 		 </div>
 	</div>
 </div>
+
 
 	<script src="node_modules/uikit/dist/js/uikit.min.js"></script>
 	<script src="node_modules/uikit/dist/js/uikit-icons.min.js"></script>

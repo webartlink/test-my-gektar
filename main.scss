@@ -1,5 +1,6 @@
 @import "node_modules/uikit/src/scss/variables-theme.scss";
 @import "node_modules/uikit/src/scss/mixins-theme.scss";
+@import 'fonts';
 
 * {
 	box-sizing: border-box;
@@ -10,10 +11,6 @@
 
 .container {
 	margin-top: 30px;
-}
-
-.filter {
-	
 }
 
 .title {
@@ -31,11 +28,12 @@ margin: 24px 0;
 	a {
 		font-family: $title-font; 
 		text-transform: uppercase;
+		font-weight: bold;
 	}
 }
 
 .text {
-	margin-bottom: 100px;
+	margin-bottom: 160px;
 }
 .uk-card {
 	margin-top: 130px;
